@@ -60,6 +60,7 @@
   </nav>
 
   <main>
+  <!-- Intro Section (Hero) -->
   <section id="intro" 
     style="display:flex; align-items:center; justify-content:center; 
            height:100vh; 
@@ -70,18 +71,11 @@
            text-align:center; 
            position:relative;">
     
-    <!-- Overlay for readability -->
     <div style="background:rgba(255, 105, 97, 0.7); padding:50px; border-radius:12px; max-width:800px;">
-      <h1 style="font-family:'Trebuchet MS', sans-serif; font-size:52px; margin-bottom:20px;">
-        Welcome to TastyBites 🍴
-      </h1>
-      <p style="font-size:22px; line-height:1.8; margin-bottom:25px;">
-        Craving something delicious? You’ve come to the right place!  
-        At <strong>TastyBites</strong>, we serve up a wide variety of mouth‑watering meals, irresistible desserts, and refreshing drinks — all delivered straight to your door.
-      </p>
+      <h1 style="font-size:52px; margin-bottom:20px;">Welcome to TastyBites 🍴</h1>
       <p style="font-size:22px; line-height:1.8; margin-bottom:30px;">
-        Whether it’s a quick lunch, a sweet treat, or a full family dinner, we’ve got you covered at prices that make indulgence affordable.  
-        <em>Delicious food, fast delivery, and unbeatable value — that’s our promise!</em>
+        Craving something delicious? You’ve come to the right place!  
+        At <strong>TastyBites</strong>, we serve up a wide variety of meals, desserts, and drinks — all delivered straight to your door.
       </p>
       <a href="#menu" 
          style="display:inline-block; padding:16px 35px; 
@@ -92,22 +86,139 @@
       </a>
     </div>
   </section>
+
+  <!-- Menu Section -->
+<section id="menu" style="padding:60px; background:#FFF8F0; text-align:center;">
+  <h2 style="color:#FF6F61; font-size:36px; margin-bottom:40px;">Our Menu</h2>
+  
+  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px;">
+    <!-- Example Menu Item -->
+    <div style="background:#fff; border-radius:12px; box-shadow:0 4px 8px rgba(0,0,0,0.1); width:250px; padding:20px;">
+      <img src="pizza.jpg" alt="Pizza" style="width:100%; border-radius:8px;">
+      <h3 style="color:#C21807; margin:15px 0;">Cheesy Pizza</h3>
+      <p style="color:#333;">Hot, cheesy, and baked to perfection.</p>
+      <p style="color:#F77F00; font-weight:bold;">KSh 500 medium size</p>
+      <button onclick="addToCart('Cheesy Pizza', 500)" 
+              style="margin-top:10px; padding:10px 20px; background:#FF6F61; color:#fff; border:none; border-radius:6px; font-weight:bold; cursor:pointer;">
+        🛒 Add to Cart
+      </button>
+    </div>
+
+    <div style="background:#fff; border-radius:12px; box-shadow:0 4px 8px rgba(0,0,0,0.1); width:250px; padding:20px;">
+      <img src="cake.jpg" alt="Cake" style="width:100%; border-radius:8px;">
+      <h3 style="color:#C21807; margin:15px 0;">Chocolate Cake</h3>
+      <p style="color:#333;">Rich, moist, and topped with lots of chocolate.</p>
+      <p style="color:#F77F00; font-weight:bold;">KSh 50 each, buy 5 get 1 free</p>
+      <button onclick="addToCart('Chocolate Cake', 350)" 
+              style="margin-top:10px; padding:10px 20px; background:#FF6F61; color:#fff; border:none; border-radius:6px; font-weight:bold; cursor:pointer;">
+        🛒 Add to Cart
+      </button>
+    </div>
+
+    <div style="background:#fff; border-radius:12px; box-shadow:0 4px 8px rgba(0,0,0,0.1); width:250px; padding:20px;">
+      <img src="Burger.jpg" alt="Burger" style="width:100%; border-radius:8px;">
+      <h3 style="color:#C21807; margin:15px 0;">Juicy Burger</h3>
+      <p style="color:#333;">Grilled beef patty with fresh toppings and a side of fries.</p>
+      <p style="color:#F77F00; font-weight:bold;">KSh 450</p>
+      <button onclick="addToCart('Juicy Burger', 450)" 
+              style="margin-top:10px; padding:10px 20px; background:#FF6F61; color:#fff; border:none; border-radius:6px; font-weight:bold; cursor:pointer;">
+        🛒 Add to Cart
+      </button>
+    </div>
+
+    <div style="background:#fff; border-radius:12px; box-shadow:0 4px 8px rgba(0,0,0,0.1); width:250px; padding:20px;">
+  <img src="samosa.jpg" alt="Beef Samosa" style="width:100%; border-radius:8px;">
+  <h3 style="color:#C21807; margin:15px 0;">Beef Samosa</h3>
+  <p style="color:#333;">Crispy golden pastry filled with spiced beef.</p>
+  <p style="color:#F77F00; font-weight:bold;">KSh 40 each</p>
+  <button onclick="addToCart('Beef Samosa', 40)" 
+          style="margin-top:10px; padding:10px 20px; background:#FF6F61; color:#fff; border:none; border-radius:6px; font-weight:bold; cursor:pointer;">
+    🛒 Add to Cart
+  </button>
+</div>
+
+
+    <div style="background:#fff; border-radius:12px; box-shadow:0 4px 8px rgba(0,0,0,0.1); width:250px; padding:20px;">
+  <img src="Noodles.jpg" alt="Stir-Fried Veggies with Noodles" style="width:100%; border-radius:8px;">
+  <h3 style="color:#C21807; margin:15px 0;">Stir-Fried Veggies with Noodles</h3>
+  <p style="color:#333;">A healthy mix of fresh vegetables tossed with noodles.</p>
+  <p style="color:#F77F00; font-weight:bold;">KSh 200</p>
+  <button onclick="addToCart('Stir-Fried Veggies with Noodles', 200)" 
+          style="margin-top:10px; padding:10px 20px; background:#FF6F61; color:#fff; border:none; border-radius:6px; font-weight:bold; cursor:pointer;">
+    🛒 Add to Cart
+  </button>
+</div>
+
+  </div>
+</section>
+
+<!-- Cart Section -->
+<section id="cart" style="padding:40px; background:#fff; text-align:center;">
+  <h2 style="color:#C21807;">🛍️ Your Cart</h2>
+  <ul id="cart-items" style="list-style:none; padding:0; font-size:18px; color:#333;"></ul>
+  <p id="cart-total" style="font-weight:bold; color:#F77F00;">Total: KSh 0</p>
+</section>
+
+<script>
+  let cart = [];
+  let total = 0;
+
+  function addToCart(item, price) {
+    cart.push({item, price});
+    total += price;
+
+    // Update cart display
+    const cartList = document.getElementById('cart-items');
+    const cartTotal = document.getElementById('cart-total');
+
+    cartList.innerHTML = cart.map(c => `<li>${c.item} - KSh ${c.price}</li>`).join('');
+    cartTotal.textContent = `Total: KSh ${total}`;
+  }
+</script>
+
 </main>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <p>Showcase your GitHub repositories or assignments here.</p>
-    </section>
 
-    <section id="about">
-      <h2>About</h2>
-      <p>Write a short bio or description about yourself here.</p>
-    </section>
+    <!-- Project Section -->
+<section id="project" style="padding:60px; background:#fff3e6; text-align:center;">
+  <h2 style="color:#FF6F61; font-size:36px; margin-bottom:20px;">Our Project</h2>
+  <p style="max-width:800px; margin:auto; font-size:18px; line-height:1.8; color:#333;">
+    <strong>TastyBites</strong> is more than just a food ordering site — it’s a community project built to connect people with delicious meals at affordable prices. 
+    We aim to make dining convenient, enjoyable, and accessible for everyone, blending technology with the joy of food.
+  </p>
+</section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: yourname@example.com</p>
-    </section>
+<!-- About Section -->
+<section id="about" style="padding:60px; background:#FFF8F0; text-align:center;">
+  <h2 style="color:#C21807; font-size:36px; margin-bottom:20px;">About Us</h2>
+  <p style="max-width:800px; margin:auto; font-size:18px; line-height:1.8; color:#333;">
+    Founded with passion for great food and customer satisfaction, <strong>TastyBites</strong> brings together chefs, food lovers, and delivery experts. 
+    Our mission is simple: serve happiness on a plate, delivered straight to your door.
+  </p>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" style="padding:60px; background:#fff3e6; text-align:center;">
+  <h2 style="color:#F77F00; font-size:36px; margin-bottom:20px;">Contact Us</h2>
+  <p style="font-size:18px; color:#333; margin-bottom:30px;">
+    Have questions, feedback, or just want to say hi? We’d love to hear from you!
+  </p>
+  <form style="max-width:600px; margin:auto; text-align:left;">
+    <label for="name" style="font-weight:bold; color:#333;">Name:</label><br>
+    <input type="text" id="name" name="name" style="width:100%; padding:10px; margin:10px 0; border-radius:6px; border:1px solid #ccc;"><br>
+
+    <label for="email" style="font-weight:bold; color:#333;">Email:</label><br>
+    <input type="email" id="email" name="email" style="width:100%; padding:10px; margin:10px 0; border-radius:6px; border:1px solid #ccc;"><br>
+
+    <label for="message" style="font-weight:bold; color:#333;">Message:</label><br>
+    <textarea id="message" name="message" rows="5" style="width:100%; padding:10px; margin:10px 0; border-radius:6px; border:1px solid #ccc;"></textarea><br>
+
+    <button type="submit" style="background:#FF6F61; color:#fff; padding:12px 25px; border:none; border-radius:6px; font-weight:bold; cursor:pointer;">
+      📩 Send Message
+    </button>
+  </form>
+</section>
+
   </main>
 
   <footer>
