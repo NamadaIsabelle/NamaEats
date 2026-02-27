@@ -48,7 +48,7 @@
 <body>
 
   <header>
-    <h1>Welcome to My Main Page</h1>
+    <h1>NamaEats</h1>
     <p>Your go-to for delicious treats and desserts!</p>
   </header>
 
@@ -58,6 +58,18 @@
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
   </nav>
+
+  <!-- Navigation Bar -->
+<nav style="position:fixed; top:0; left:0; width:100%; background:#FF6F61; padding:15px 0; z-index:1000;">
+  <ul style="list-style:none; display:flex; justify-content:center; gap:40px; margin:0; padding:0; font-size:18px;">
+    <li><a href="#intro" style="color:#fff; text-decoration:none; font-weight:bold;">Home</a></li>
+    <li><a href="#menu" style="color:#fff; text-decoration:none; font-weight:bold;">Menu</a></li>
+    <li><a href="#project" style="color:#fff; text-decoration:none; font-weight:bold;">Project</a></li>
+    <li><a href="#about" style="color:#fff; text-decoration:none; font-weight:bold;">About</a></li>
+    <li><a href="#contact" style="color:#fff; text-decoration:none; font-weight:bold;">Contact</a></li>
+  </ul>
+</nav>
+
 
   <main>
   <!-- Intro Section (Hero) -->
@@ -72,10 +84,10 @@
            position:relative;">
     
     <div style="background:rgba(255, 105, 97, 0.7); padding:50px; border-radius:12px; max-width:800px;">
-      <h1 style="font-size:52px; margin-bottom:20px;">Welcome to TastyBites 🍴</h1>
+      <h1 style="font-size:52px; margin-bottom:20px;">Welcome to NamaEats 🍴</h1>
       <p style="font-size:22px; line-height:1.8; margin-bottom:30px;">
         Craving something delicious? You’ve come to the right place!  
-        At <strong>TastyBites</strong>, we serve up a wide variety of meals, desserts, and drinks — all delivered straight to your door.
+        At <strong>NamaEats</strong>, we serve up a wide variety of meals, desserts, and drinks — all delivered straight to your door.
       </p>
       <a href="#menu" 
          style="display:inline-block; padding:16px 35px; 
@@ -90,89 +102,205 @@
   <!-- Menu Section -->
 <section id="menu" style="padding:60px; background:#FFF8F0; text-align:center;">
   <h2 style="color:#FF6F61; font-size:36px; margin-bottom:40px;">Our Menu</h2>
-  
+
+  <!-- Meals Category -->
+  <h3 style="color:#C21807; font-size:28px; margin:30px 0;">🍲 Meals</h3>
   <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px;">
-    <!-- Example Menu Item -->
+    <!-- Pizza -->
     <div style="background:#fff; border-radius:12px; box-shadow:0 4px 8px rgba(0,0,0,0.1); width:250px; padding:20px;">
       <img src="pizza.jpg" alt="Pizza" style="width:100%; border-radius:8px;">
       <h3 style="color:#C21807; margin:15px 0;">Cheesy Pizza</h3>
       <p style="color:#333;">Hot, cheesy, and baked to perfection.</p>
-      <p style="color:#F77F00; font-weight:bold;">KSh 500 medium size</p>
-      <button onclick="addToCart('Cheesy Pizza', 500)" 
-              style="margin-top:10px; padding:10px 20px; background:#FF6F61; color:#fff; border:none; border-radius:6px; font-weight:bold; cursor:pointer;">
-        🛒 Add to Cart
-      </button>
+      <p style="color:#F77F00; font-weight:bold;">KSh 500</p>
+      <button onclick="addToCart('Cheesy Pizza', 500)" style="margin-top:10px; padding:10px 20px; background:#FF6F61; color:#fff; border:none; border-radius:6px; font-weight:bold; cursor:pointer;">🛒 Add to Cart</button>
     </div>
 
+    <!-- Burger -->
     <div style="background:#fff; border-radius:12px; box-shadow:0 4px 8px rgba(0,0,0,0.1); width:250px; padding:20px;">
-      <img src="cake.jpg" alt="Cake" style="width:100%; border-radius:8px;">
-      <h3 style="color:#C21807; margin:15px 0;">Chocolate Cake</h3>
-      <p style="color:#333;">Rich, moist, and topped with lots of chocolate.</p>
-      <p style="color:#F77F00; font-weight:bold;">KSh 50 each, buy 5 get 1 free</p>
-      <button onclick="addToCart('Chocolate Cake', 350)" 
-              style="margin-top:10px; padding:10px 20px; background:#FF6F61; color:#fff; border:none; border-radius:6px; font-weight:bold; cursor:pointer;">
-        🛒 Add to Cart
-      </button>
-    </div>
-
-    <div style="background:#fff; border-radius:12px; box-shadow:0 4px 8px rgba(0,0,0,0.1); width:250px; padding:20px;">
-      <img src="Burger.jpg" alt="Burger" style="width:100%; border-radius:8px;">
+      <img src="burger.jpg" alt="Burger" style="width:100%; border-radius:8px;">
       <h3 style="color:#C21807; margin:15px 0;">Juicy Burger</h3>
-      <p style="color:#333;">Grilled beef patty with fresh toppings and a side of fries.</p>
+      <p style="color:#333;">Grilled beef patty with fresh toppings.</p>
       <p style="color:#F77F00; font-weight:bold;">KSh 450</p>
-      <button onclick="addToCart('Juicy Burger', 450)" 
-              style="margin-top:10px; padding:10px 20px; background:#FF6F61; color:#fff; border:none; border-radius:6px; font-weight:bold; cursor:pointer;">
-        🛒 Add to Cart
-      </button>
+      <button onclick="addToCart('Juicy Burger', 450)" style="margin-top:10px; padding:10px 20px; background:#FF6F61; color:#fff; border:none; border-radius:6px; font-weight:bold; cursor:pointer;">🛒 Add to Cart</button>
     </div>
 
+    <!-- Noodles -->
     <div style="background:#fff; border-radius:12px; box-shadow:0 4px 8px rgba(0,0,0,0.1); width:250px; padding:20px;">
-  <img src="samosa.jpg" alt="Beef Samosa" style="width:100%; border-radius:8px;">
-  <h3 style="color:#C21807; margin:15px 0;">Beef Samosa</h3>
-  <p style="color:#333;">Crispy golden pastry filled with spiced beef.</p>
-  <p style="color:#F77F00; font-weight:bold;">KSh 40 each</p>
-  <button onclick="addToCart('Beef Samosa', 40)" 
-          style="margin-top:10px; padding:10px 20px; background:#FF6F61; color:#fff; border:none; border-radius:6px; font-weight:bold; cursor:pointer;">
-    🛒 Add to Cart
-  </button>
-</div>
-
-
-    <div style="background:#fff; border-radius:12px; box-shadow:0 4px 8px rgba(0,0,0,0.1); width:250px; padding:20px;">
-  <img src="Noodles.jpg" alt="Stir-Fried Veggies with Noodles" style="width:100%; border-radius:8px;">
-  <h3 style="color:#C21807; margin:15px 0;">Stir-Fried Veggies with Noodles</h3>
-  <p style="color:#333;">A healthy mix of fresh vegetables tossed with noodles.</p>
-  <p style="color:#F77F00; font-weight:bold;">KSh 200</p>
-  <button onclick="addToCart('Stir-Fried Veggies with Noodles', 200)" 
-          style="margin-top:10px; padding:10px 20px; background:#FF6F61; color:#fff; border:none; border-radius:6px; font-weight:bold; cursor:pointer;">
-    🛒 Add to Cart
-  </button>
-</div>
-
+      <img src="noodles.jpg" alt="Stir-Fried Veggies with Noodles" style="width:100%; border-radius:8px;">
+      <h3 style="color:#C21807; margin:15px 0;">Stir-Fried Veggies with Noodles</h3>
+      <p style="color:#333;">A healthy mix of fresh vegetables tossed with noodles.</p>
+      <p style="color:#F77F00; font-weight:bold;">KSh 200</p>
+      <button onclick="addToCart('Stir-Fried Veggies with Noodles', 200)" style="margin-top:10px; padding:10px 20px; background:#FF6F61; color:#fff; border:none; border-radius:6px; font-weight:bold; cursor:pointer;">🛒 Add to Cart</button>
+    </div>
   </div>
+
+  <!-- Snacks Category -->
+  <h3 style="color:#C21807; font-size:28px; margin:30px 0;">🥟 Snacks</h3>
+  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px;">
+    <!-- Beef Samosa -->
+    <div style="background:#fff; border-radius:12px; box-shadow:0 4px 8px rgba(0,0,0,0.1); width:250px; padding:20px;">
+      <img src="samosa.jpg" alt="Beef Samosa" style="width:100%; border-radius:8px;">
+      <h3 style="color:#C21807; margin:15px 0;">Beef Samosa</h3>
+      <p style="color:#333;">Crispy golden pastry filled with spiced beef.</p>
+      <p style="color:#F77F00; font-weight:bold;">KSh 40 each</p>
+      <button onclick="addToCart('Beef Samosa', 40)" style="margin-top:10px; padding:10px 20px; background:#FF6F61; color:#fff; border:none; border-radius:6px; font-weight:bold; cursor:pointer;">🛒 Add to Cart</button>
+    </div>
+  </div>
+
+
+  <!-- Drinks Category -->
+<h3 style="color:#C21807; font-size:28px; margin:30px 0;">🥤 Drinks</h3>
+<div style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px;">
+  <!-- Fresh Juice -->
+  <div style="background:#fff; border-radius:12px; box-shadow:0 4px 8px rgba(0,0,0,0.1); width:250px; padding:20px;">
+    <img src="juice.jpg" alt="Fresh Juice" style="width:100%; border-radius:8px;">
+    <h3 style="color:#C21807; margin:15px 0;">Fresh Juice</h3>
+    <p style="color:#333;">Refreshing fruit juice made from seasonal fruits.</p>
+    <p style="color:#F77F00; font-weight:bold;">KSh 100</p>
+    <button onclick="addToCart('Fresh Juice', 100)" 
+            style="margin-top:10px; padding:10px 20px; background:#FF6F61; color:#fff; border:none; border-radius:6px; font-weight:bold; cursor:pointer;">
+      🛒 Add to Cart
+    </button>
+  </div>
+
+  <!-- Soda -->
+  <div style="background:#fff; border-radius:12px; box-shadow:0 4px 8px rgba(0,0,0,0.1); width:250px; padding:20px;">
+    <img src="soda.jpg" alt="Soda" style="width:100%; border-radius:8px;">
+    <h3 style="color:#C21807; margin:15px 0;">Chilled Soda</h3>
+    <p style="color:#333;">Classic fizzy drink served ice cold.</p>
+    <p style="color:#F77F00; font-weight:bold;">KSh 100</p>
+    <button onclick="addToCart('Chilled Soda', 100)" 
+            style="margin-top:10px; padding:10px 20px; background:#FF6F61; color:#fff; border:none; border-radius:6px; font-weight:bold; cursor:pointer;">
+      🛒 Add to Cart
+    </button>
+  </div>
+
+  <!-- Milkshake -->
+  <div style="background:#fff; border-radius:12px; box-shadow:0 4px 8px rgba(0,0,0,0.1); width:250px; padding:20px;">
+    <img src="milkshake.jpg" alt="Milkshake" style="width:100%; border-radius:8px;">
+    <h3 style="color:#C21807; margin:15px 0;">Creamy Milkshake</h3>
+    <p style="color:#333;">Thick, creamy milkshake topped with whipped cream.</p>
+    <p style="color:#F77F00; font-weight:bold;">KSh 250</p>
+    <button onclick="addToCart('Creamy Milkshake', 250)" 
+            style="margin-top:10px; padding:10px 20px; background:#FF6F61; color:#fff; border:none; border-radius:6px; font-weight:bold; cursor:pointer;">
+      🛒 Add to Cart
+    </button>
+  </div>
+</div>
+
+<!-- Desserts Category -->
+<h3 style="color:#C21807; font-size:28px; margin:30px 0;">🍰 Desserts</h3>
+<div style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px;">
+  <!-- Chocolate Cake -->
+  <div style="background:#fff; border-radius:12px; box-shadow:0 4px 8px rgba(0,0,0,0.1); width:250px; padding:20px;">
+    <img src="cake.jpg" alt="Chocolate Cake" style="width:100%; border-radius:8px;">
+    <h3 style="color:#C21807; margin:15px 0;">Chocolate Cake</h3>
+    <p style="color:#333;">Rich, moist, and topped with cream.</p>
+    <p style="color:#F77F00; font-weight:bold;">KSh 50</p>
+    <button onclick="addToCart('Chocolate Cake', 50)" 
+            style="margin-top:10px; padding:10px 20px; background:#FF6F61; color:#fff; border:none; border-radius:6px; font-weight:bold; cursor:pointer;">
+      🛒 Add to Cart
+    </button>
+  </div>
+
+  <!-- Ice Cream -->
+  <div style="background:#fff; border-radius:12px; box-shadow:0 4px 8px rgba(0,0,0,0.1); width:250px; padding:20px;">
+    <img src="icecream.jpg" alt="Ice Cream" style="width:100%; border-radius:8px;">
+    <h3 style="color:#C21807; margin:15px 0;">Vanilla Ice Cream</h3>
+    <p style="color:#333;">Smooth and creamy vanilla scoop.</p>
+    <p style="color:#F77F00; font-weight:bold;">KSh 200</p>
+    <button onclick="addToCart('Vanilla Ice Cream', 200)" 
+            style="margin-top:10px; padding:10px 20px; background:#FF6F61; color:#fff; border:none; border-radius:6px; font-weight:bold; cursor:pointer;">
+      🛒 Add to Cart
+    </button>
+  </div>
+</div>
+
 </section>
+
+
+
 
 <!-- Cart Section -->
 <section id="cart" style="padding:40px; background:#fff; text-align:center;">
   <h2 style="color:#C21807;">🛍️ Your Cart</h2>
   <ul id="cart-items" style="list-style:none; padding:0; font-size:18px; color:#333;"></ul>
   <p id="cart-total" style="font-weight:bold; color:#F77F00;">Total: KSh 0</p>
+  
+  <!-- Cart Controls -->
+  <button onclick="clearCart()" 
+          style="margin-top:20px; padding:12px 25px; background:#C21807; color:#fff; border:none; border-radius:6px; font-weight:bold; cursor:pointer;">
+    🧹 Clear Cart
+  </button>
+
+  <!-- Checkout Button -->
+  <button onclick="checkout()" 
+          style="margin-top:20px; padding:12px 25px; background:#F77F00; color:#fff; border:none; border-radius:6px; font-weight:bold; cursor:pointer;">
+    ✅ Checkout with M‑Pesa
+  </button>
 </section>
 
 <script>
-  let cart = [];
+  let cart = {};
   let total = 0;
 
   function addToCart(item, price) {
-    cart.push({item, price});
+    if (cart[item]) {
+      cart[item].quantity += 1;
+    } else {
+      cart[item] = { price: price, quantity: 1 };
+    }
     total += price;
+    updateCartDisplay();
+  }
 
-    // Update cart display
+  function removeFromCart(item) {
+    if (cart[item]) {
+      total -= cart[item].price;
+      cart[item].quantity -= 1;
+
+      if (cart[item].quantity <= 0) {
+        delete cart[item];
+      }
+      updateCartDisplay();
+    }
+  }
+
+  function clearCart() {
+    cart = {};
+    total = 0;
+    updateCartDisplay();
+  }
+
+  function updateCartDisplay() {
     const cartList = document.getElementById('cart-items');
     const cartTotal = document.getElementById('cart-total');
 
-    cartList.innerHTML = cart.map(c => `<li>${c.item} - KSh ${c.price}</li>`).join('');
+    cartList.innerHTML = Object.keys(cart).map(key => {
+      const entry = cart[key];
+      return `
+        <li>
+          ${key} × ${entry.quantity} — KSh ${entry.price * entry.quantity}
+          <button onclick="removeFromCart('${key}')" 
+                  style="margin-left:10px; padding:4px 10px; background:#C21807; color:#fff; border:none; border-radius:4px; cursor:pointer;">
+            ❌ Remove
+          </button>
+        </li>
+      `;
+    }).join('');
+
     cartTotal.textContent = `Total: KSh ${total}`;
+  }
+
+  function checkout() {
+    if (total === 0) {
+      alert("🛒 Your cart is empty!");
+      return;
+    }
+    // For now, just simulate checkout
+    alert(`✅ Proceeding to M‑Pesa payment...\nTotal: KSh ${total}\n\n(Backend integration required here)`);
+    
+    // Later: send cart + total to backend (PHP/Node.js) that calls M‑Pesa API
   }
 </script>
 
@@ -183,7 +311,7 @@
 <section id="project" style="padding:60px; background:#fff3e6; text-align:center;">
   <h2 style="color:#FF6F61; font-size:36px; margin-bottom:20px;">Our Project</h2>
   <p style="max-width:800px; margin:auto; font-size:18px; line-height:1.8; color:#333;">
-    <strong>TastyBites</strong> is more than just a food ordering site — it’s a community project built to connect people with delicious meals at affordable prices. 
+    <strong>NamaEats</strong> is more than just a food ordering site — it’s a community project built to connect people with delicious meals at affordable prices. 
     We aim to make dining convenient, enjoyable, and accessible for everyone, blending technology with the joy of food.
   </p>
 </section>
@@ -192,7 +320,7 @@
 <section id="about" style="padding:60px; background:#FFF8F0; text-align:center;">
   <h2 style="color:#C21807; font-size:36px; margin-bottom:20px;">About Us</h2>
   <p style="max-width:800px; margin:auto; font-size:18px; line-height:1.8; color:#333;">
-    Founded with passion for great food and customer satisfaction, <strong>TastyBites</strong> brings together chefs, food lovers, and delivery experts. 
+    Founded with passion for great food and customer satisfaction, <strong>NamaEats</strong> brings together chefs, food lovers, and delivery experts. 
     Our mission is simple: serve happiness on a plate, delivered straight to your door.
   </p>
 </section>
@@ -227,3 +355,4 @@
 
 </body>
 </html>
+
